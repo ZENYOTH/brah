@@ -4,16 +4,16 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 -- Create entity
 local entityTable = Spawner.createEntity({
     CustomName = "Depth", -- Custom name of your entity
-    Model = "rbxassetid://11525474091", -- Can be GitHub file or rbxassetid
+    Model = "rbxassetid://12649464825", -- Can be GitHub file or rbxassetid
     Speed = 150, -- Percentage, 100 = default Rush speed
-    DelayTime = 4, -- Time before starting cycles (seconds)
+    DelayTime = 2, -- Time before starting cycles (seconds)
     HeightOffset = 0,
     CanKill = true,
     KillRange = 50,
-    BackwardsMovement = true,
+    BackwardsMovement = false,
     BreakLights = true,
     FlickerLights = {
-        false, -- Enabled/Disabled
+        true, -- Enabled/Disabled
         1, -- Time (seconds)
     },
     Cycles = {
@@ -23,11 +23,11 @@ local entityTable = Spawner.createEntity({
     },
     CamShake = {
         true, -- Enabled/Disabled
-        {10, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
+        {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
         100, -- Shake start distance (from Entity to you)
     },
     Jumpscare = {
-        false, -- Enabled/Disabled
+        true, -- Enabled/Disabled
         {
             Image1 = "rbxassetid://10483855823", -- Image1 url
             Image2 = "rbxassetid://10483999903", -- Image2 url

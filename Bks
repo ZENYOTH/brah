@@ -11,8 +11,7 @@ end)()
 -- depth
 coroutine.wrap(function()
     while true do
-        wait(math.random(10,150))
-        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(math.random(30,150)) game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0.3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZENYOTH/brah/main/Depth%20v2"))()
    end

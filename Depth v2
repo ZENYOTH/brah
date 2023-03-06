@@ -4,7 +4,7 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 -- Create entity
 local entityTable = Spawner.createEntity({
     CustomName = "Depth", -- Custom name of your entity
-    Model = "rbxassetid://12649464825", -- Can be GitHub file or rbxassetid
+    Model = "rbxassetid://12701721063", -- Can be GitHub file or rbxassetid
     Speed = 150, -- Percentage, 100 = default Rush speed
     DelayTime = 2, -- Time before starting cycles (seconds)
     HeightOffset = 0,

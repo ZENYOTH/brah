@@ -11,10 +11,10 @@ local entityTable = Spawner.createEntity({
     CanKill = true,
     KillRange = 60,
     BackwardsMovement = false,
-    BreakLights = true,
+    BreakLights = false,
     FlickerLights = {
         true, -- Enabled/Disabled
-        0.5, -- Time (seconds)
+        8, -- Time (seconds)
     },
     Cycles = {
         Min = 6,

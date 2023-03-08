@@ -16,6 +16,14 @@ coroutine.wrap(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZENYOTH/brah/main/Depth%20v2"))()
    end
 end)()
+--b-60
+coroutine.wrap(function()
+    while true do
+        wait(math.random(100,550))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZENYOTH/brah/main/B-60"))()
+  end
+end)()
 function ReplaceAudGit(GithubSnd,SoundName)
 	local url=GithubSnd
 	if not isfile(SoundName..".mp3") then

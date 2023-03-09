@@ -1,3 +1,17 @@
+                if workspace.Ambience_Seek.Playing == true then
+			continue
+		end
+		if workspace.Ambience_Figure.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureEnd.Playing == true then
+			continue
+		end
+		if workspace.Ambience_FigureStart.Playing == true then
+			continue
+		end
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(1.5)
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(61, 171, 98)
 game.Lighting.MainColorCorrection.Contrast = 0.2
 game.Lighting.MainColorCorrection.Saturation = -0.7

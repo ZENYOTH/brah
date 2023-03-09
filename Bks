@@ -1,3 +1,4 @@
+firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Unbeatable Mode Actived',true,5)
 local syncConnection; syncConnection = game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
 -- Rebound
 coroutine.wrap(function()

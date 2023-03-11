@@ -2,13 +2,13 @@ firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent
 local syncConnection; syncConnection = game:GetService("ReplicatedStorage").GameData.LatestRoom:GetPropertyChangedSignal("Value"):Wait()
 
 loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
--- Rebound
+-- A-60HC
 coroutine.wrap(function()
     while true do
-        wait(math.random(20,350))
+        wait(math.random(15,350))
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(2)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ZENYOTH/brah/main/Rebornd"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZENYOTH/brah/main/A60HC"))()
     end
 end)()
 -- A-60

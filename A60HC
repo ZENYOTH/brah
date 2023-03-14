@@ -63,6 +63,15 @@ end
 
 entityTable.Debug.OnEntityDespawned = function()
     print("Entity has despawned:", entityTable)
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "Out Of Many Rebounds",
+    Desc = "Back For More!",
+    Reason = "Encounter A-60",
+    Image = "https://tr.rbxcdn.com/30de755515aede22b5016a89fbcc59a2/420/420/Decal/Png",
+})
 end
 
 entityTable.Debug.OnEntityStartMoving = function()

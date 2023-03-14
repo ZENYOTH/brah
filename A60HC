@@ -3,9 +3,9 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 
 -- Create entity
 local entityTable = Spawner.createEntity({
-    CustomName = "A-60HC", -- Custom name of your entity
+    CustomName = "A-60", -- Custom name of your entity
     Model = "rbxassetid://11514950088", -- Can be GitHub file or rbxassetid
-    Speed = 500, -- Percentage, 100 = default Rush speed
+    Speed = 200, -- Percentage, 100 = default Rush speed
     DelayTime = 5, -- Time before starting cycles (seconds)
     HeightOffset = 0,
     CanKill = true,
@@ -13,7 +13,7 @@ local entityTable = Spawner.createEntity({
     BackwardsMovement = false,
     BreakLights = false,
     FlickerLights = {
-        true, -- Enabled/Disabled
+        false, -- Enabled/Disabled
         1, -- Time (seconds)
     },
     Cycles = {
@@ -23,7 +23,7 @@ local entityTable = Spawner.createEntity({
     },
     CamShake = {
         true, -- Enabled/Disabled
-        {15, 50, 0.1, 1}, -- Shake values (don't change if you don't know)
+        {15, 5.2, 0.1, 1}, -- Shake values (don't change if you don't know)
         120, -- Shake start distance (from Entity to you)
     },
     Jumpscare = {

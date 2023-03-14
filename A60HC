@@ -27,10 +27,10 @@ local entityTable = Spawner.createEntity({
         120, -- Shake start distance (from Entity to you)
     },
     Jumpscare = {
-        false, -- Enabled/Disabled
+        true, -- Enabled/Disabled
         {
-            Image1 = "rbxassetid://10483855823", -- Image1 url
-            Image2 = "rbxassetid://10483999903", -- Image2 url
+            Image1 = "rbxassetid://12209846418", -- Image1 url
+            Image2 = "rbxassetid://12209846418", -- Image2 url
             Shake = true,
             Sound1 = {
                 5263560896, -- SoundId
@@ -42,7 +42,7 @@ local entityTable = Spawner.createEntity({
             },
             Flashing = {
                 true, -- Enabled/Disabled
-                Color3.fromRGB(255, 255, 255), -- Color
+                Color3.fromRGB(128, 0, 0), -- Color
             },
             Tease = {
                 false, -- Enabled/Disabled

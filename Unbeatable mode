@@ -5,7 +5,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
 -- A-60HC
 coroutine.wrap(function()
     while true do
-        wait(math.random(15,350))
+        wait(math.random(25,350))
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(2)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZENYOTH/brah/main/A60HC"))()
@@ -29,7 +29,7 @@ end)()
 --rebound
 coroutine.wrap(function()
     while true do
-        wait(math.random(25,350))
+        wait(math.random(15,350))
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(2)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZENYOTH/brah/main/ReboundNoJumpscare.txt"))()

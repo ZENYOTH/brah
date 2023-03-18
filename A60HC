@@ -63,12 +63,19 @@ end
 
 entityTable.Debug.OnEntityDespawned = function()
     print("Entity has despawned:", entityTable)
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 71)
+game.Lighting.MainColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(15), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
 local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
 -- Creates and displays your custom achievement
 Achievements.Get({
     Title = "Out Of Many Rebounds",
-    Desc = "Back For More!",
+    Desc = "Might Come Back Or Not",
     Reason = "Encounter A-60",
     Image = "https://tr.rbxcdn.com/30de755515aede22b5016a89fbcc59a2/420/420/Decal/Png",
 })
@@ -80,13 +87,6 @@ end
 
 entityTable.Debug.OnEntityFinishedRebound = function()
     print("Entity has finished rebound:", entityTable)
-game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 71)
-game.Lighting.MainColorCorrection.Contrast = 1
-local tween = game:GetService("TweenService")
-tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(15), {Contrast = 0}):Play()
-local TweenService = game:GetService("TweenService")
-local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2),{TintColor = Color3.fromRGB(255, 255, 255)})
-TW:Play()
 end
 
 entityTable.Debug.OnEntityEnteredRoom = function(room)

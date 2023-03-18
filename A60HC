@@ -77,7 +77,7 @@ Achievements.Get({
     Title = "Out Of Many Rebounds",
     Desc = "Might Come Back Or Not",
     Reason = "Encounter A-60",
-    Image = "https://tr.rbxcdn.com/30de755515aede22b5016a89fbcc59a2/420/420/Decal/Png",
+    Image = "https://tr.rbxcdn.com/72641a21a5142c8ce11476f6d62a1d04/420/420/Decal/Png",
 })
 end
 

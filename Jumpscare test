@@ -21,7 +21,7 @@
     Face.Position = UDim2.new(0.5, 0, 0.5, 0)
     Face.ResampleMode = Enum.ResamplerMode.Pixelated
     Face.Size = UDim2.new(0, 150, 0, 150)
-    Face.Image = "rbxassetid://10914800940"
+    Face.Image = "rbxassetid://12863711403"
 
     Background.Parent = JumpscareGui
     Face.Parent = Background
@@ -29,7 +29,7 @@ local scare = Instance.new("Sound")
 scare.Parent = JumpscareGui
 scare.Name = "MyEarsBurn"
 scare.SoundId = "rbxassetid://458243346"
-scare.PlaybackSpeed = 32
+scare.PlaybackSpeed = 2
 scare.Volume = 3
 
 local shift = Instance.new("PitchShiftSoundEffect")

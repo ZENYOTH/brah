@@ -93,6 +93,7 @@ end
 
 entityTable.Debug.OnDeath = function()
     warn("Player has died.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/Jumpscares/main/ReboundJumpscare.txt"))()
 end
 ------------------------------------
 

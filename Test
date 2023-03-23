@@ -1,0 +1,5 @@
+game:GetService("UserInputService").InputBegan:Connect(function(input, typing)
+	if input.KeyCode == Enum.KeyCode.X and not typing then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ZENYOTH/brah/main/Jumpscare%20test'))()
+	end
+end)
